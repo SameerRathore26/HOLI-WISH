@@ -1,0 +1,75 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Message box */
+.container {
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px 50px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  animation: glow 3s infinite alternate;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #fff0f5;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+span {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  }
+  to {
+    box-shadow: 0 0 40px rgba(255,105,180,0.6);
+  }
+}
+
+/* Flower animation */
+.flower {
+  position: absolute;
+  top: -50px;
+  font-size: 26px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
